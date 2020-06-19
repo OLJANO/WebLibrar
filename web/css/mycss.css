@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09.06.2020, 23:35:49
+    Author     : V
+*/
+
+.container {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serf;
+  color: navy;
+  width: 100%;
+  max-width: 1470px;
+}
+H1, H5 {
+    font-family: 'Bebas Neue', sans-serf;
+    font-weight: 200;
+    text-align: center;
+    color: navy;
+}
+body {
+    background-size: cover;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main{
+    /*Основной раздел будет занимать все свободное место на странице*/
+    flex: 1 0 auto;
+}
+
+footer{
+    /*Футер будет занимать столько места по вертикали, сколько и должен и не пикселя больше */
+    flex: 0 0 auto;
+}
+.section{
+    margin: 6rem 0;
+}
+img{
+    /*Растягиваем картинку на всю ширину родительского контейнера*/
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+}
+.shadow{
+    /* Параметры тени */
+    box-shadow: 1px 1px 1px #000; 
+}
+
+.navbar .nav-item .nav-link {
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}

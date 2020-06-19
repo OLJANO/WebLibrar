@@ -16,8 +16,9 @@
         <h1><em>Возврат книги</em></h1>
         <p>${info}</p>
         <a href="index.jsp"><em>Главная страница</em></a><br>
+        <p></p>
         <form action="returnOnBook" method="POST">
-            <em>Список выданных книг:</em><br>
+            <p><em>Список выданных книг:</em><p>
             <c:if test="${listHistories == null}">
                 <p><em>Нет выданных читателям книг!</em></p>
             </c:if>
@@ -30,8 +31,9 @@
                     </c:forEach>
                 </select>
             </c:if>
-            <br>
-            <input type="submit" value="Вернуть книгу">
+                <br>
+                <p></p> 
+                <input type="submit" value="Вернуть книгу">
         </form>
     </body>
 </html>
